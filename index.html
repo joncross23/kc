@@ -53,6 +53,10 @@
     }
     </script>
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/png" href="images/kc.png">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -279,6 +283,18 @@
             color: var(--color-gray-600);
             text-transform: uppercase;
             letter-spacing: 1.5px;
+        }
+
+        .logo__img {
+            height: 48px;
+            width: auto;
+            display: block;
+            border-radius: 6px;
+        }
+
+        .logo__img--footer {
+            height: 56px;
+            margin-bottom: 1rem;
         }
 
 
@@ -1168,7 +1184,7 @@
             margin-bottom: 3rem;
         }
 
-        .footer__brand .logo__icon {
+        .footer__brand .logo__img {
             margin-bottom: 1rem;
         }
 
@@ -1626,8 +1642,9 @@
             color: #f1f5f9;
         }
 
-        [data-theme="midnight"] .logo__icon {
-            background: linear-gradient(135deg, #00d4ff, #a78bfa);
+        [data-theme="midnight"] .logo__img {
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,212,255,0.15);
         }
 
         [data-theme="midnight"] .nav__link {
@@ -1843,8 +1860,7 @@
             border-bottom: 2px solid #1a1a1a;
         }
 
-        [data-theme="heritage"] .logo__icon {
-            background: #1a1a1a;
+        [data-theme="heritage"] .logo__img {
             border-radius: 0;
         }
 
@@ -2016,9 +2032,8 @@
             border-bottom: 1px solid #e2e8f0;
         }
 
-        [data-theme="fresh"] .logo__icon {
-            background: linear-gradient(135deg, #059669, #06b6d4);
-            border-radius: 12px;
+        [data-theme="fresh"] .logo__img {
+            border-radius: 14px;
         }
 
         [data-theme="fresh"] .nav__cta {
@@ -2216,12 +2231,7 @@
             color: #ffffff;
         }
 
-        [data-theme="bold"] .logo__text span {
-            color: #a1a1aa;
-        }
-
-        [data-theme="bold"] .logo__icon {
-            background: #FF6600;
+        [data-theme="bold"] .logo__img {
             border-radius: 0;
         }
 
@@ -2505,11 +2515,7 @@
     <header class="header">
         <div class="container">
             <a href="#" class="logo">
-                <div class="logo__icon">KC</div>
-                <div class="logo__text">
-                    KC Motorcycles
-                    <span>Brighton &amp; Portslade</span>
-                </div>
+                <img src="images/kc.png" alt="KC Motorcycles" class="logo__img">
             </a>
             <nav>
                 <button class="nav__toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav__list').classList.toggle('active')">
@@ -3006,7 +3012,7 @@
         <div class="container">
             <div class="footer__grid">
                 <div class="footer__brand">
-                    <div class="logo__icon">KC</div>
+                    <img src="images/kc.png" alt="KC Motorcycles" class="logo__img logo__img--footer">
                     <p>
                         Brighton's trusted independent motorcycle workshop. Expert servicing,
                         repairs, and MOT testing for all makes and models since 2000.
