@@ -1,0 +1,3178 @@
+<!DOCTYPE html>
+<html lang="en-GB" data-theme="default">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KC Motorcycles Brighton | Servicing, Repairs & MOT Testing</title>
+    <meta name="description" content="KC Motorcycles Brighton - Expert motorcycle servicing, repairs & MOT testing in Portslade. 4.8★ rated with 215+ reviews. Honda Mechanic of the Year runner-up.">
+    <meta name="keywords" content="motorcycle servicing Brighton, motorcycle MOT Brighton, motorcycle repairs Portslade, KC Motorcycles, bike MOT Brighton">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="KC Motorcycles Brighton | Expert Motorcycle Servicing & Repairs">
+    <meta property="og:description" content="Brighton's trusted independent motorcycle workshop. Servicing, repairs & MOT testing for all makes and models.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.kcmotorcycles.com">
+
+    <!-- Structured Data for Local Business -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "MotorcycleRepair",
+        "name": "KC Motorcycles",
+        "image": "images/hero-bg.jpg",
+        "url": "https://www.kcmotorcycles.com",
+        "telephone": "01273 411911",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Unit 3 Freemans Road",
+            "addressLocality": "Portslade, Brighton",
+            "addressRegion": "East Sussex",
+            "postalCode": "BN41 1SL",
+            "addressCountry": "GB"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "reviewCount": "215"
+        },
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday"],
+                "opens": "09:00",
+                "closes": "18:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Saturday",
+                "opens": "09:00",
+                "closes": "16:00"
+            }
+        ],
+        "priceRange": "££"
+    }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=Playfair+Display:wght@500;600;700;800&family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=Sora:wght@400;500;600;700;800&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* ============================================
+           CSS CUSTOM PROPERTIES
+           ============================================ */
+        :root {
+            /* Primary palette - bold motorcycle aesthetic */
+            --color-primary: #E63946;       /* Racing red */
+            --color-primary-dark: #C1121F;
+            --color-primary-light: #FF6B6B;
+            --color-secondary: #1D3557;     /* Deep navy */
+            --color-secondary-light: #264573;
+            --color-accent: #F4A261;        /* Warm amber */
+
+            /* Neutrals */
+            --color-dark: #0D1117;
+            --color-gray-900: #1A1F2E;
+            --color-gray-800: #2D3142;
+            --color-gray-700: #3D4257;
+            --color-gray-600: #5C6078;
+            --color-gray-400: #9CA3AF;
+            --color-gray-300: #D1D5DB;
+            --color-gray-200: #E5E7EB;
+            --color-gray-100: #F3F4F6;
+            --color-white: #FFFFFF;
+
+            /* Feedback colours */
+            --color-success: #10B981;
+            --color-warning: #F59E0B;
+            --color-star: #FBBF24;
+
+            /* Typography */
+            --font-heading: 'Space Grotesk', sans-serif;
+            --font-body: 'Inter', sans-serif;
+
+            /* Spacing */
+            --section-padding: 5rem 0;
+            --container-max: 1200px;
+            --border-radius: 12px;
+            --border-radius-sm: 8px;
+
+            /* Shadows */
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.1);
+            --shadow-md: 0 4px 20px rgba(0,0,0,0.1);
+            --shadow-lg: 0 10px 40px rgba(0,0,0,0.15);
+            --shadow-glow: 0 0 30px rgba(230,57,70,0.2);
+
+            /* Transitions */
+            --transition: all 0.3s ease;
+        }
+
+        /* ============================================
+           RESET & BASE
+           ============================================ */
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: var(--font-body);
+            color: var(--color-gray-800);
+            line-height: 1.6;
+            background: var(--color-white);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-heading);
+            line-height: 1.2;
+            color: var(--color-dark);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition);
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        .container {
+            max-width: var(--container-max);
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        .section-label {
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--color-primary);
+            margin-bottom: 0.75rem;
+        }
+
+        .section-title {
+            font-size: clamp(2rem, 4vw, 2.75rem);
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .section-subtitle {
+            font-size: 1.1rem;
+            color: var(--color-gray-600);
+            max-width: 600px;
+        }
+
+        /* ============================================
+           TOP BAR
+           ============================================ */
+        .top-bar {
+            background: var(--color-dark);
+            color: var(--color-gray-400);
+            font-size: 0.85rem;
+            padding: 0.5rem 0;
+        }
+
+        .top-bar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .top-bar a {
+            color: var(--color-gray-300);
+        }
+
+        .top-bar a:hover {
+            color: var(--color-primary-light);
+        }
+
+        .top-bar__hours {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .top-bar__hours .dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--color-success);
+            display: inline-block;
+            animation: pulse-dot 2s infinite;
+        }
+
+        @keyframes pulse-dot {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        .top-bar__contact {
+            display: flex;
+            gap: 1.5rem;
+            align-items: center;
+        }
+
+        /* ============================================
+           HEADER / NAVIGATION
+           ============================================ */
+        .header {
+            background: var(--color-white);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .logo__icon {
+            width: 48px;
+            height: 48px;
+            background: var(--color-primary);
+            border-radius: var(--border-radius-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-family: var(--font-heading);
+            font-weight: 800;
+            font-size: 1.25rem;
+        }
+
+        .logo__text {
+            font-family: var(--font-heading);
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: var(--color-dark);
+        }
+
+        .logo__text span {
+            display: block;
+            font-size: 0.7rem;
+            font-weight: 500;
+            color: var(--color-gray-600);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+
+
+        .nav__list {
+            display: flex;
+            list-style: none;
+            gap: 0.25rem;
+        }
+
+        .nav__link {
+            padding: 0.5rem 1rem;
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: var(--color-gray-700);
+            border-radius: var(--border-radius-sm);
+        }
+
+        .nav__link:hover {
+            color: var(--color-primary);
+            background: rgba(230,57,70,0.05);
+        }
+
+        .nav__cta {
+            background: var(--color-primary);
+            color: var(--color-white) !important;
+            padding: 0.6rem 1.5rem;
+            border-radius: var(--border-radius-sm);
+            font-weight: 600;
+        }
+
+        .nav__cta:hover {
+            background: var(--color-primary-dark);
+        }
+
+        /* Mobile menu toggle */
+        .nav__toggle {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+
+        .nav__toggle span {
+            display: block;
+            width: 24px;
+            height: 2px;
+            background: var(--color-dark);
+            margin: 6px 0;
+            transition: var(--transition);
+        }
+
+        /* ============================================
+           HERO SECTION
+           ============================================ */
+        .hero {
+            background: linear-gradient(135deg, var(--color-dark) 0%, var(--color-secondary) 100%);
+            color: var(--color-white);
+            padding: 6rem 0 4rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background: url('images/hero-bg.jpg') center/cover no-repeat;
+            opacity: 0.15;
+        }
+
+        .hero .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+            position: relative;
+        }
+
+        .hero__badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(230,57,70,0.15);
+            border: 1px solid rgba(230,57,70,0.3);
+            color: var(--color-primary-light);
+            padding: 0.4rem 1rem;
+            border-radius: 999px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero__title {
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
+            font-weight: 800;
+            color: var(--color-white);
+            margin-bottom: 1.25rem;
+            line-height: 1.1;
+        }
+
+        .hero__title .highlight {
+            color: var(--color-primary);
+        }
+
+        .hero__description {
+            font-size: 1.15rem;
+            color: rgba(255,255,255,0.75);
+            margin-bottom: 2rem;
+            max-width: 500px;
+            line-height: 1.7;
+        }
+
+        .hero__actions {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-bottom: 2.5rem;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.85rem 1.75rem;
+            border-radius: var(--border-radius-sm);
+            font-family: var(--font-body);
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            border: none;
+            transition: var(--transition);
+        }
+
+        .btn--primary {
+            background: var(--color-primary);
+            color: var(--color-white);
+        }
+
+        .btn--primary:hover {
+            background: var(--color-primary-dark);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-glow);
+        }
+
+        .btn--outline {
+            background: transparent;
+            color: var(--color-white);
+            border: 2px solid rgba(255,255,255,0.3);
+        }
+
+        .btn--outline:hover {
+            border-color: var(--color-white);
+            background: rgba(255,255,255,0.1);
+        }
+
+        .btn--dark {
+            background: var(--color-dark);
+            color: var(--color-white);
+        }
+
+        .btn--dark:hover {
+            background: var(--color-gray-900);
+            transform: translateY(-2px);
+        }
+
+        .hero__stats {
+            display: flex;
+            gap: 2.5rem;
+        }
+
+        .hero__stat {
+            text-align: left;
+        }
+
+        .hero__stat-number {
+            font-family: var(--font-heading);
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--color-white);
+        }
+
+        .hero__stat-label {
+            font-size: 0.85rem;
+            color: rgba(255,255,255,0.6);
+        }
+
+        /* Hero image placeholder */
+        .hero__image {
+            position: relative;
+        }
+
+        .hero__image-placeholder {
+            background: url('images/hero-bg.jpg') center/cover no-repeat;
+            border-radius: var(--border-radius);
+            aspect-ratio: 4/3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid rgba(255,255,255,0.1);
+            position: relative;
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+        }
+
+        /* Google rating badge */
+        .hero__google-rating {
+            position: absolute;
+            bottom: -1rem;
+            left: 2rem;
+            background: var(--color-white);
+            padding: 1rem 1.5rem;
+            border-radius: var(--border-radius-sm);
+            box-shadow: var(--shadow-lg);
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .hero__google-rating .stars {
+            color: var(--color-star);
+            font-size: 1.1rem;
+        }
+
+        .hero__google-rating .rating-text {
+            font-weight: 700;
+            color: var(--color-dark);
+            font-size: 1.1rem;
+        }
+
+        .hero__google-rating .rating-count {
+            font-size: 0.8rem;
+            color: var(--color-gray-600);
+        }
+
+        /* ============================================
+           TRUST BAR
+           ============================================ */
+        .trust-bar {
+            background: var(--color-gray-100);
+            padding: 2rem 0;
+            border-bottom: 1px solid var(--color-gray-200);
+        }
+
+        .trust-bar .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .trust-bar__item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            color: var(--color-gray-700);
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .trust-bar__icon {
+            width: 40px;
+            height: 40px;
+            background: var(--color-white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            box-shadow: var(--shadow-sm);
+        }
+
+        /* ============================================
+           SERVICES SECTION
+           ============================================ */
+        .services {
+            padding: var(--section-padding);
+        }
+
+        .services__header {
+            text-align: center;
+            margin-bottom: 3.5rem;
+        }
+
+        .services__header .section-subtitle {
+            margin: 0 auto;
+        }
+
+        .services__grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .service-card {
+            background: var(--color-white);
+            border: 1px solid var(--color-gray-200);
+            border-radius: var(--border-radius);
+            padding: 2rem;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: var(--color-primary);
+            transform: scaleX(0);
+            transition: var(--transition);
+        }
+
+        .service-card:hover {
+            border-color: var(--color-primary);
+            box-shadow: var(--shadow-md);
+            transform: translateY(-4px);
+        }
+
+        .service-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .service-card__icon {
+            width: 56px;
+            height: 56px;
+            background: linear-gradient(135deg, rgba(230,57,70,0.1), rgba(230,57,70,0.05));
+            border-radius: var(--border-radius-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .service-card__title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+        }
+
+        .service-card__desc {
+            color: var(--color-gray-600);
+            font-size: 0.95rem;
+            margin-bottom: 1.25rem;
+            line-height: 1.6;
+        }
+
+        .service-card__link {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--color-primary);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+        }
+
+        .service-card__link:hover {
+            gap: 0.6rem;
+        }
+
+        /* ============================================
+           ABOUT / WHY CHOOSE US
+           ============================================ */
+        .about {
+            padding: var(--section-padding);
+            background: var(--color-gray-100);
+        }
+
+        .about .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .about__image-placeholder {
+            background: url('images/about-bg.jpg') center/cover no-repeat;
+            border-radius: var(--border-radius);
+            aspect-ratio: 4/3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-gray-600);
+            box-shadow: var(--shadow-md);
+        }
+
+        .about__content .section-title {
+            margin-bottom: 1.25rem;
+        }
+
+        .about__text {
+            color: var(--color-gray-600);
+            margin-bottom: 2rem;
+            line-height: 1.7;
+        }
+
+        .about__features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.25rem;
+            margin-bottom: 2rem;
+        }
+
+        .about__feature {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+        }
+
+        .about__feature-icon {
+            width: 28px;
+            height: 28px;
+            background: rgba(230,57,70,0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .about__feature-text {
+            font-weight: 500;
+            font-size: 0.95rem;
+            color: var(--color-gray-800);
+        }
+
+        /* Award badge */
+        .about__award {
+            background: linear-gradient(135deg, var(--color-secondary), var(--color-secondary-light));
+            color: var(--color-white);
+            padding: 1.25rem 1.5rem;
+            border-radius: var(--border-radius-sm);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .about__award-icon {
+            font-size: 2rem;
+        }
+
+        .about__award-text strong {
+            display: block;
+            font-size: 1rem;
+        }
+
+        .about__award-text span {
+            font-size: 0.85rem;
+            opacity: 0.8;
+        }
+
+        /* ============================================
+           MOT SECTION (prominent)
+           ============================================ */
+        .mot {
+            padding: var(--section-padding);
+            background: var(--color-secondary);
+            color: var(--color-white);
+            position: relative;
+        }
+
+        .mot::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('images/location-bg.jpg') center/cover no-repeat;
+            opacity: 0.08;
+        }
+
+        .mot .container {
+            position: relative;
+            z-index: 1;
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .mot .section-label {
+            color: var(--color-accent);
+        }
+
+        .mot .section-title {
+            color: var(--color-white);
+            margin-bottom: 1rem;
+        }
+
+        .mot__description {
+            color: rgba(255,255,255,0.75);
+            margin-bottom: 2rem;
+            line-height: 1.7;
+        }
+
+        .mot__classes {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .mot__class {
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: var(--border-radius-sm);
+            padding: 1.25rem;
+        }
+
+        .mot__class-title {
+            font-weight: 700;
+            margin-bottom: 0.25rem;
+            font-size: 1rem;
+        }
+
+        .mot__class-desc {
+            font-size: 0.85rem;
+            color: rgba(255,255,255,0.6);
+        }
+
+        /* MOT booking card */
+        .mot__booking {
+            background: var(--color-white);
+            border-radius: var(--border-radius);
+            padding: 2.5rem;
+            color: var(--color-dark);
+        }
+
+        .mot__booking h3 {
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .mot__booking-price {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--color-primary);
+            font-family: var(--font-heading);
+            margin-bottom: 0.25rem;
+        }
+
+        .mot__booking-note {
+            font-size: 0.85rem;
+            color: var(--color-gray-600);
+            margin-bottom: 1.5rem;
+        }
+
+        .mot__booking-features {
+            list-style: none;
+            margin-bottom: 2rem;
+        }
+
+        .mot__booking-features li {
+            padding: 0.5rem 0;
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--color-gray-700);
+        }
+
+        .mot__booking-features li::before {
+            content: '✓';
+            color: var(--color-success);
+            font-weight: 700;
+        }
+
+        .mot__booking .btn {
+            width: 100%;
+            justify-content: center;
+        }
+
+        /* ============================================
+           REVIEWS / TESTIMONIALS
+           ============================================ */
+        .reviews {
+            padding: var(--section-padding);
+        }
+
+        .reviews__header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .reviews__header .section-subtitle {
+            margin: 0 auto;
+        }
+
+        .reviews__rating-summary {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .reviews__rating-number {
+            font-family: var(--font-heading);
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--color-dark);
+        }
+
+        .reviews__rating-stars {
+            color: var(--color-star);
+            font-size: 1.25rem;
+            letter-spacing: 2px;
+        }
+
+        .reviews__rating-count {
+            font-size: 0.9rem;
+            color: var(--color-gray-600);
+        }
+
+        .reviews__grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .review-card {
+            background: var(--color-white);
+            border: 1px solid var(--color-gray-200);
+            border-radius: var(--border-radius);
+            padding: 1.75rem;
+        }
+
+        .review-card__stars {
+            color: var(--color-star);
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+        }
+
+        .review-card__text {
+            color: var(--color-gray-700);
+            font-size: 0.95rem;
+            line-height: 1.7;
+            margin-bottom: 1.25rem;
+            font-style: italic;
+        }
+
+        .review-card__author {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .review-card__avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: var(--color-gray-200);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 0.85rem;
+            color: var(--color-gray-600);
+        }
+
+        .review-card__name {
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .review-card__source {
+            font-size: 0.8rem;
+            color: var(--color-gray-600);
+        }
+
+        /* ============================================
+           BRANDS SECTION
+           ============================================ */
+        .brands {
+            padding: 3.5rem 0;
+            background: var(--color-gray-100);
+            border-top: 1px solid var(--color-gray-200);
+            border-bottom: 1px solid var(--color-gray-200);
+        }
+
+        .brands__title {
+            text-align: center;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--color-gray-600);
+            margin-bottom: 2rem;
+        }
+
+        .brands__grid {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 2.5rem;
+        }
+
+        .brand-logo {
+            background: var(--color-white);
+            padding: 0.75rem 1.5rem;
+            border-radius: var(--border-radius-sm);
+            font-weight: 600;
+            font-size: 0.85rem;
+            color: var(--color-gray-600);
+            border: 1px solid var(--color-gray-200);
+            transition: var(--transition);
+        }
+
+        .brand-logo:hover {
+            border-color: var(--color-primary);
+            color: var(--color-primary);
+            box-shadow: var(--shadow-sm);
+        }
+
+        /* ============================================
+           CONTACT / BOOKING SECTION
+           ============================================ */
+        .contact {
+            padding: var(--section-padding);
+        }
+
+        .contact .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+
+        .contact__info h3 {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .contact__info h3:first-child {
+            margin-top: 0;
+        }
+
+        .contact__detail {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .contact__detail-icon {
+            width: 44px;
+            height: 44px;
+            background: rgba(230,57,70,0.1);
+            border-radius: var(--border-radius-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            flex-shrink: 0;
+        }
+
+        .contact__detail-text strong {
+            display: block;
+            font-size: 0.95rem;
+            margin-bottom: 0.15rem;
+        }
+
+        .contact__detail-text span {
+            color: var(--color-gray-600);
+            font-size: 0.9rem;
+        }
+
+        .contact__hours-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .contact__hours-table tr {
+            border-bottom: 1px solid var(--color-gray-200);
+        }
+
+        .contact__hours-table td {
+            padding: 0.6rem 0;
+            font-size: 0.9rem;
+        }
+
+        .contact__hours-table td:last-child {
+            text-align: right;
+            font-weight: 500;
+        }
+
+        .contact__hours-table .today {
+            color: var(--color-primary);
+            font-weight: 600;
+        }
+
+        /* Contact form */
+        .contact__form {
+            background: var(--color-gray-100);
+            border-radius: var(--border-radius);
+            padding: 2.5rem;
+        }
+
+        .contact__form h3 {
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact__form p {
+            color: var(--color-gray-600);
+            margin-bottom: 1.75rem;
+            font-size: 0.95rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.25rem;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 0.9rem;
+            font-weight: 500;
+            margin-bottom: 0.4rem;
+            color: var(--color-gray-800);
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            border: 1px solid var(--color-gray-300);
+            border-radius: var(--border-radius-sm);
+            font-family: var(--font-body);
+            font-size: 0.95rem;
+            background: var(--color-white);
+            transition: var(--transition);
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--color-primary);
+            box-shadow: 0 0 0 3px rgba(230,57,70,0.1);
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        /* ============================================
+           MAP SECTION
+           ============================================ */
+        .map {
+            height: 400px;
+            background: var(--color-gray-200);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-gray-600);
+            font-size: 1.1rem;
+        }
+
+        /* ============================================
+           FOOTER
+           ============================================ */
+        .footer {
+            background: var(--color-dark);
+            color: rgba(255,255,255,0.7);
+            padding: 4rem 0 2rem;
+        }
+
+        .footer__grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr 1fr;
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer__brand .logo__icon {
+            margin-bottom: 1rem;
+        }
+
+        .footer__brand p {
+            font-size: 0.9rem;
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer__social {
+            display: flex;
+            gap: 0.75rem;
+        }
+
+        .footer__social a {
+            width: 40px;
+            height: 40px;
+            background: rgba(255,255,255,0.08);
+            border-radius: var(--border-radius-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(255,255,255,0.6);
+            font-size: 0.9rem;
+        }
+
+        .footer__social a:hover {
+            background: var(--color-primary);
+            color: var(--color-white);
+        }
+
+        .footer h4 {
+            color: var(--color-white);
+            font-size: 1rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .footer__links {
+            list-style: none;
+        }
+
+        .footer__links li {
+            margin-bottom: 0.6rem;
+        }
+
+        .footer__links a {
+            font-size: 0.9rem;
+            color: rgba(255,255,255,0.6);
+        }
+
+        .footer__links a:hover {
+            color: var(--color-primary-light);
+        }
+
+        .footer__bottom {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            font-size: 0.85rem;
+        }
+
+        /* ============================================
+           RESPONSIVE
+           ============================================ */
+        @media (max-width: 1024px) {
+            .hero .container,
+            .about .container,
+            .mot .container {
+                grid-template-columns: 1fr;
+            }
+
+            .hero__image {
+                order: -1;
+            }
+
+            .footer__grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .top-bar {
+                display: none;
+            }
+
+            .nav__list {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: var(--color-white);
+                flex-direction: column;
+                padding: 1rem;
+                box-shadow: var(--shadow-md);
+            }
+
+            .nav__list.active {
+                display: flex;
+            }
+
+            .nav__toggle {
+                display: block;
+            }
+
+            .hero {
+                padding: 3rem 0;
+                text-align: center;
+            }
+
+            .hero__description {
+                margin: 0 auto 2rem;
+            }
+
+            .hero__actions {
+                justify-content: center;
+            }
+
+            .hero__stats {
+                justify-content: center;
+            }
+
+            .services__grid {
+                grid-template-columns: 1fr;
+            }
+
+            .about__features {
+                grid-template-columns: 1fr;
+            }
+
+            .mot__classes {
+                grid-template-columns: 1fr;
+            }
+
+            .contact .container {
+                grid-template-columns: 1fr;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .reviews__grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer__grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer__bottom {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+        /* ============================================
+           SCROLL ANIMATIONS
+           ============================================ */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ============================================
+           THEME SWITCHER UI
+           ============================================ */
+        .theme-switcher {
+            position: fixed;
+            top: 80px;
+            right: 20px;
+            z-index: 9999;
+            font-family: var(--font-body);
+        }
+
+        .theme-switcher__toggle {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: var(--color-dark);
+            border: 2px solid rgba(255,255,255,0.15);
+            color: var(--color-white);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.15rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .theme-switcher__toggle:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 28px rgba(0,0,0,0.35);
+        }
+
+        .theme-switcher__toggle::after {
+            content: '';
+            position: absolute;
+            top: -3px;
+            right: -3px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: var(--color-primary);
+            border: 2px solid var(--color-dark);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .theme-switcher.has-theme .theme-switcher__toggle::after {
+            opacity: 1;
+        }
+
+        .theme-switcher__panel {
+            position: absolute;
+            top: calc(100% + 10px);
+            right: 0;
+            width: 280px;
+            background: var(--color-white);
+            border-radius: 12px;
+            box-shadow: 0 12px 48px rgba(0,0,0,0.2);
+            border: 1px solid var(--color-gray-200);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-8px) scale(0.95);
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+            overflow: hidden;
+        }
+
+        .theme-switcher__panel.open {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0) scale(1);
+        }
+
+        .theme-switcher__header {
+            padding: 14px 16px 10px;
+            border-bottom: 1px solid var(--color-gray-200);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .theme-switcher__header h4 {
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--color-gray-600);
+            margin: 0;
+            font-family: var(--font-body);
+        }
+
+        .theme-switcher__reset {
+            font-size: 0.75rem;
+            color: var(--color-gray-400);
+            cursor: pointer;
+            background: none;
+            border: none;
+            font-family: var(--font-body);
+            padding: 2px 6px;
+            border-radius: 4px;
+            transition: all 0.2s ease;
+        }
+
+        .theme-switcher__reset:hover {
+            color: var(--color-primary);
+            background: rgba(230,57,70,0.05);
+        }
+
+        .theme-switcher__list {
+            padding: 8px;
+            list-style: none;
+        }
+
+        .theme-switcher__option {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 10px 12px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            border: 2px solid transparent;
+        }
+
+        .theme-switcher__option:hover {
+            background: var(--color-gray-100);
+        }
+
+        .theme-switcher__option.active {
+            background: rgba(230,57,70,0.04);
+            border-color: var(--color-primary);
+        }
+
+        .theme-switcher__swatch {
+            width: 36px;
+            height: 36px;
+            border-radius: 8px;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.7rem;
+            font-weight: 700;
+            color: white;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .theme-switcher__swatch::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 40%;
+        }
+
+        .theme-switcher__swatch--default {
+            background: linear-gradient(135deg, #E63946, #1D3557);
+        }
+
+        .theme-switcher__swatch--midnight {
+            background: linear-gradient(135deg, #0f172a, #1e3a5f);
+        }
+        .theme-switcher__swatch--midnight::after {
+            background: #00d4ff;
+        }
+
+        .theme-switcher__swatch--heritage {
+            background: linear-gradient(135deg, #1a1a1a, #8B4513);
+        }
+        .theme-switcher__swatch--heritage::after {
+            background: #D4A843;
+        }
+
+        .theme-switcher__swatch--fresh {
+            background: linear-gradient(135deg, #ffffff, #10B981);
+        }
+        .theme-switcher__swatch--fresh::after {
+            background: #059669;
+        }
+
+        .theme-switcher__swatch--bold {
+            background: linear-gradient(135deg, #18181b, #FF6600);
+        }
+        .theme-switcher__swatch--bold::after {
+            background: #FF6600;
+        }
+
+        .theme-switcher__info {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .theme-switcher__name {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--color-dark);
+            line-height: 1.2;
+        }
+
+        .theme-switcher__desc {
+            font-size: 0.75rem;
+            color: var(--color-gray-600);
+            line-height: 1.3;
+            margin-top: 1px;
+        }
+
+        .theme-switcher__check {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 2px solid var(--color-gray-300);
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.65rem;
+            transition: all 0.2s ease;
+        }
+
+        .theme-switcher__option.active .theme-switcher__check {
+            background: var(--color-primary);
+            border-color: var(--color-primary);
+            color: white;
+        }
+
+        /* ============================================
+           THEME: MIDNIGHT STEEL (Dark, modern, techy)
+           ============================================ */
+        [data-theme="midnight"] {
+            --color-primary: #00d4ff;
+            --color-primary-dark: #00a8cc;
+            --color-primary-light: #5ce1ff;
+            --color-secondary: #1e3a5f;
+            --color-secondary-light: #2a4f7a;
+            --color-accent: #a78bfa;
+
+            --color-dark: #0a0e17;
+            --color-gray-900: #0f1629;
+            --color-gray-800: #1a2340;
+            --color-gray-700: #e2e8f0;
+            --color-gray-600: #94a3b8;
+            --color-gray-400: #64748b;
+            --color-gray-300: #334155;
+            --color-gray-200: #1e293b;
+            --color-gray-100: #0f172a;
+            --color-white: #0d1321;
+
+            --color-star: #facc15;
+            --font-heading: 'Sora', sans-serif;
+            --font-body: 'DM Sans', sans-serif;
+            --border-radius: 16px;
+            --border-radius-sm: 10px;
+            --shadow-glow: 0 0 30px rgba(0,212,255,0.25);
+        }
+
+        [data-theme="midnight"] body {
+            background: #0a0e17;
+            color: #cbd5e1;
+        }
+
+        [data-theme="midnight"] h1,
+        [data-theme="midnight"] h2,
+        [data-theme="midnight"] h3,
+        [data-theme="midnight"] h4,
+        [data-theme="midnight"] h5,
+        [data-theme="midnight"] h6 {
+            color: #f1f5f9;
+        }
+
+        [data-theme="midnight"] .header {
+            background: rgba(10,14,23,0.9);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255,255,255,0.06);
+        }
+
+        [data-theme="midnight"] .logo__text {
+            color: #f1f5f9;
+        }
+
+        [data-theme="midnight"] .logo__icon {
+            background: linear-gradient(135deg, #00d4ff, #a78bfa);
+        }
+
+        [data-theme="midnight"] .nav__link {
+            color: #94a3b8;
+        }
+
+        [data-theme="midnight"] .nav__link:hover {
+            color: #00d4ff;
+            background: rgba(0,212,255,0.08);
+        }
+
+        [data-theme="midnight"] .top-bar {
+            background: #060a12;
+            border-bottom: 1px solid rgba(0,212,255,0.1);
+        }
+
+        [data-theme="midnight"] .trust-bar {
+            background: #0f172a;
+            border-color: rgba(255,255,255,0.05);
+        }
+
+        [data-theme="midnight"] .trust-bar__icon {
+            background: rgba(0,212,255,0.1);
+        }
+
+        [data-theme="midnight"] .service-card {
+            background: rgba(15,23,42,0.8);
+            border-color: rgba(255,255,255,0.06);
+        }
+
+        [data-theme="midnight"] .service-card:hover {
+            border-color: rgba(0,212,255,0.4);
+            box-shadow: 0 0 30px rgba(0,212,255,0.1);
+        }
+
+        [data-theme="midnight"] .service-card__icon {
+            background: linear-gradient(135deg, rgba(0,212,255,0.15), rgba(167,139,250,0.1));
+        }
+
+        [data-theme="midnight"] .about {
+            background: #0d1321;
+        }
+
+        [data-theme="midnight"] .about__feature-icon {
+            background: rgba(0,212,255,0.15);
+            color: #00d4ff;
+        }
+
+        [data-theme="midnight"] .about__award {
+            background: linear-gradient(135deg, rgba(0,212,255,0.15), rgba(167,139,250,0.15));
+            border: 1px solid rgba(0,212,255,0.2);
+        }
+
+        [data-theme="midnight"] .mot {
+            background: linear-gradient(135deg, #0a1628, #1a2d4a);
+        }
+
+        [data-theme="midnight"] .reviews {
+            background: #0a0e17;
+        }
+
+        [data-theme="midnight"] .review-card {
+            background: rgba(15,23,42,0.8);
+            border-color: rgba(255,255,255,0.06);
+        }
+
+        [data-theme="midnight"] .brands {
+            background: #0f172a;
+            border-color: rgba(255,255,255,0.05);
+        }
+
+        [data-theme="midnight"] .brand-logo {
+            background: rgba(30,41,59,0.6);
+            border-color: rgba(255,255,255,0.08);
+            color: #94a3b8;
+        }
+
+        [data-theme="midnight"] .brand-logo:hover {
+            border-color: #00d4ff;
+            color: #00d4ff;
+        }
+
+        [data-theme="midnight"] .contact__form {
+            background: rgba(15,23,42,0.8);
+            border: 1px solid rgba(255,255,255,0.06);
+        }
+
+        [data-theme="midnight"] .form-group input,
+        [data-theme="midnight"] .form-group select,
+        [data-theme="midnight"] .form-group textarea {
+            background: rgba(10,14,23,0.8);
+            border-color: rgba(255,255,255,0.1);
+            color: #e2e8f0;
+        }
+
+        [data-theme="midnight"] .form-group input:focus,
+        [data-theme="midnight"] .form-group select:focus,
+        [data-theme="midnight"] .form-group textarea:focus {
+            border-color: #00d4ff;
+            box-shadow: 0 0 0 3px rgba(0,212,255,0.15);
+        }
+
+        [data-theme="midnight"] .footer {
+            background: #060a12;
+        }
+
+        [data-theme="midnight"] .mot__booking {
+            background: rgba(15,23,42,0.95);
+            border: 1px solid rgba(0,212,255,0.15);
+            color: #e2e8f0;
+        }
+
+        [data-theme="midnight"] .mot__booking h3 {
+            color: #f1f5f9;
+        }
+
+        [data-theme="midnight"] .hero__google-rating {
+            background: rgba(15,23,42,0.95);
+            border: 1px solid rgba(0,212,255,0.2);
+        }
+
+        [data-theme="midnight"] .hero__google-rating .rating-text {
+            color: #f1f5f9;
+        }
+
+        /* Midnight: 2-column services, wider cards */
+        [data-theme="midnight"] .services__grid {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+
+        [data-theme="midnight"] .service-card {
+            padding: 2.5rem;
+        }
+
+        [data-theme="midnight"] .nav__list {
+            background: rgba(10,14,23,0.95);
+        }
+
+        [data-theme="midnight"] .theme-switcher__toggle {
+            background: #1e293b;
+            border-color: rgba(0,212,255,0.2);
+        }
+
+        [data-theme="midnight"] .theme-switcher__panel {
+            background: #1a2340;
+            border-color: rgba(255,255,255,0.08);
+        }
+
+        [data-theme="midnight"] .theme-switcher__header {
+            border-color: rgba(255,255,255,0.08);
+        }
+
+        [data-theme="midnight"] .theme-switcher__option:hover {
+            background: rgba(255,255,255,0.04);
+        }
+
+        [data-theme="midnight"] .theme-switcher__option.active {
+            background: rgba(0,212,255,0.08);
+            border-color: #00d4ff;
+        }
+
+        [data-theme="midnight"] .theme-switcher__name {
+            color: #f1f5f9;
+        }
+
+        [data-theme="midnight"] .theme-switcher__check {
+            border-color: #334155;
+        }
+
+        @media (max-width: 768px) {
+            [data-theme="midnight"] .services__grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* ============================================
+           THEME: HERITAGE (Classic, warm, premium)
+           ============================================ */
+        [data-theme="heritage"] {
+            --color-primary: #8B4513;
+            --color-primary-dark: #6B3410;
+            --color-primary-light: #A0522D;
+            --color-secondary: #1a1a1a;
+            --color-secondary-light: #2a2a2a;
+            --color-accent: #D4A843;
+
+            --color-dark: #1a1a1a;
+            --color-gray-900: #222222;
+            --color-gray-800: #333333;
+            --color-gray-700: #4a4a4a;
+            --color-gray-600: #666666;
+            --color-gray-400: #999999;
+            --color-gray-300: #cccccc;
+            --color-gray-200: #e0ddd5;
+            --color-gray-100: #f5f2eb;
+            --color-white: #faf8f3;
+
+            --color-star: #D4A843;
+            --font-heading: 'Playfair Display', serif;
+            --font-body: 'DM Sans', sans-serif;
+            --border-radius: 4px;
+            --border-radius-sm: 3px;
+            --shadow-glow: 0 0 30px rgba(139,69,19,0.15);
+        }
+
+        [data-theme="heritage"] body {
+            background: #faf8f3;
+        }
+
+        [data-theme="heritage"] .header {
+            background: #faf8f3;
+            border-bottom: 2px solid #1a1a1a;
+        }
+
+        [data-theme="heritage"] .logo__icon {
+            background: #1a1a1a;
+            border-radius: 0;
+        }
+
+        [data-theme="heritage"] .nav__cta {
+            border-radius: 0;
+        }
+
+        [data-theme="heritage"] .hero {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2a2216 100%);
+        }
+
+        [data-theme="heritage"] .hero__badge {
+            background: rgba(212,168,67,0.15);
+            border-color: rgba(212,168,67,0.3);
+            color: #D4A843;
+            border-radius: 0;
+        }
+
+        [data-theme="heritage"] .hero__title .highlight {
+            color: #D4A843;
+        }
+
+        [data-theme="heritage"] .trust-bar {
+            background: #1a1a1a;
+            color: #cccccc;
+            border: none;
+        }
+
+        [data-theme="heritage"] .trust-bar__item {
+            color: #cccccc;
+        }
+
+        [data-theme="heritage"] .trust-bar__icon {
+            background: rgba(212,168,67,0.15);
+            box-shadow: none;
+        }
+
+        [data-theme="heritage"] .section-label {
+            color: #8B4513;
+            font-family: 'DM Sans', sans-serif;
+        }
+
+        [data-theme="heritage"] .service-card {
+            border-radius: 0;
+            border: 1px solid #e0ddd5;
+            border-top: 3px solid #1a1a1a;
+        }
+
+        [data-theme="heritage"] .service-card::before {
+            background: #D4A843;
+        }
+
+        [data-theme="heritage"] .service-card:hover {
+            border-color: #8B4513;
+        }
+
+        [data-theme="heritage"] .service-card__icon {
+            background: linear-gradient(135deg, rgba(139,69,19,0.1), rgba(212,168,67,0.08));
+            border-radius: 0;
+        }
+
+        [data-theme="heritage"] .about {
+            background: #f0ece3;
+        }
+
+        [data-theme="heritage"] .about__image-placeholder {
+            border-radius: 0;
+        }
+
+        [data-theme="heritage"] .about__feature-icon {
+            background: rgba(139,69,19,0.1);
+            border-radius: 0;
+        }
+
+        [data-theme="heritage"] .about__award {
+            background: #1a1a1a;
+            border-radius: 0;
+        }
+
+        [data-theme="heritage"] .mot__booking {
+            border-radius: 0;
+        }
+
+        [data-theme="heritage"] .review-card {
+            border-radius: 0;
+            border-top: 3px solid #D4A843;
+        }
+
+        [data-theme="heritage"] .brand-logo {
+            border-radius: 0;
+        }
+
+        [data-theme="heritage"] .contact__form {
+            border-radius: 0;
+            background: #f0ece3;
+        }
+
+        [data-theme="heritage"] .hero__image-placeholder {
+            border-radius: 0;
+        }
+
+        [data-theme="heritage"] .hero__google-rating {
+            border-radius: 0;
+        }
+
+        /* Heritage: alternate about layout (image right) */
+        [data-theme="heritage"] .about .container {
+            direction: rtl;
+        }
+
+        [data-theme="heritage"] .about .container > * {
+            direction: ltr;
+        }
+
+        /* Heritage: 3-col services with ornamental top borders */
+        [data-theme="heritage"] .services__grid {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @media (max-width: 1024px) {
+            [data-theme="heritage"] .services__grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 768px) {
+            [data-theme="heritage"] .services__grid {
+                grid-template-columns: 1fr;
+            }
+            [data-theme="heritage"] .about .container {
+                direction: ltr;
+            }
+        }
+
+        /* ============================================
+           THEME: FRESH (Clean, light, minimal)
+           ============================================ */
+        [data-theme="fresh"] {
+            --color-primary: #059669;
+            --color-primary-dark: #047857;
+            --color-primary-light: #34d399;
+            --color-secondary: #1e293b;
+            --color-secondary-light: #334155;
+            --color-accent: #06b6d4;
+
+            --color-dark: #0f172a;
+            --color-gray-900: #1e293b;
+            --color-gray-800: #334155;
+            --color-gray-700: #475569;
+            --color-gray-600: #64748b;
+            --color-gray-400: #94a3b8;
+            --color-gray-300: #e2e8f0;
+            --color-gray-200: #e2e8f0;
+            --color-gray-100: #f8fafc;
+            --color-white: #ffffff;
+
+            --color-star: #f59e0b;
+            --font-heading: 'Outfit', sans-serif;
+            --font-body: 'Inter', sans-serif;
+            --border-radius: 20px;
+            --border-radius-sm: 12px;
+            --shadow-glow: 0 0 30px rgba(5,150,105,0.15);
+        }
+
+        [data-theme="fresh"] .header {
+            background: rgba(255,255,255,0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            box-shadow: none;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        [data-theme="fresh"] .logo__icon {
+            background: linear-gradient(135deg, #059669, #06b6d4);
+            border-radius: 12px;
+        }
+
+        [data-theme="fresh"] .nav__cta {
+            border-radius: 999px;
+        }
+
+        [data-theme="fresh"] .btn {
+            border-radius: 999px;
+        }
+
+        [data-theme="fresh"] .hero {
+            background: linear-gradient(160deg, #ecfdf5 0%, #f0f9ff 50%, #ffffff 100%);
+            color: var(--color-dark);
+            padding: 5rem 0 4rem;
+        }
+
+        [data-theme="fresh"] .hero::before {
+            opacity: 0.06;
+        }
+
+        [data-theme="fresh"] .hero__title {
+            color: #0f172a;
+        }
+
+        [data-theme="fresh"] .hero__title .highlight {
+            color: #059669;
+        }
+
+        [data-theme="fresh"] .hero__description {
+            color: #475569;
+        }
+
+        [data-theme="fresh"] .hero__badge {
+            background: rgba(5,150,105,0.08);
+            border-color: rgba(5,150,105,0.2);
+            color: #059669;
+        }
+
+        [data-theme="fresh"] .btn--outline {
+            color: #0f172a;
+            border-color: #e2e8f0;
+            background: white;
+        }
+
+        [data-theme="fresh"] .btn--outline:hover {
+            border-color: #059669;
+            background: rgba(5,150,105,0.05);
+        }
+
+        [data-theme="fresh"] .hero__stat-number {
+            color: #0f172a;
+        }
+
+        [data-theme="fresh"] .hero__stat-label {
+            color: #64748b;
+        }
+
+        [data-theme="fresh"] .hero__stats {
+            gap: 3rem;
+        }
+
+        [data-theme="fresh"] .trust-bar {
+            background: white;
+            border-color: #e2e8f0;
+        }
+
+        [data-theme="fresh"] .trust-bar__icon {
+            background: #ecfdf5;
+        }
+
+        [data-theme="fresh"] .service-card {
+            border: none;
+            background: #f8fafc;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+        }
+
+        [data-theme="fresh"] .service-card:hover {
+            background: white;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+            border-color: transparent;
+        }
+
+        [data-theme="fresh"] .service-card::before {
+            background: linear-gradient(90deg, #059669, #06b6d4);
+        }
+
+        [data-theme="fresh"] .service-card__icon {
+            background: linear-gradient(135deg, rgba(5,150,105,0.1), rgba(6,182,212,0.08));
+        }
+
+        [data-theme="fresh"] .about {
+            background: white;
+        }
+
+        [data-theme="fresh"] .about__feature-icon {
+            background: rgba(5,150,105,0.1);
+        }
+
+        [data-theme="fresh"] .about__award {
+            background: linear-gradient(135deg, #059669, #06b6d4);
+            border-radius: 16px;
+        }
+
+        [data-theme="fresh"] .review-card {
+            border: none;
+            background: #f8fafc;
+        }
+
+        [data-theme="fresh"] .brands {
+            background: #f8fafc;
+            border-color: #e2e8f0;
+        }
+
+        [data-theme="fresh"] .brand-logo {
+            border-radius: 999px;
+        }
+
+        [data-theme="fresh"] .brand-logo:hover {
+            border-color: #059669;
+            color: #059669;
+        }
+
+        [data-theme="fresh"] .mot {
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%);
+        }
+
+        [data-theme="fresh"] .mot .section-label {
+            color: #34d399;
+        }
+
+        [data-theme="fresh"] .contact__form {
+            background: #f8fafc;
+        }
+
+        /* Fresh: hero full-width stacked, bigger impact */
+        [data-theme="fresh"] .hero .container {
+            grid-template-columns: 1.3fr 0.7fr;
+        }
+
+        /* Fresh: masonry-style services */
+        [data-theme="fresh"] .services__grid {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.25rem;
+        }
+
+        /* Fresh: reviews side-scroll feel with 2 cols */
+        [data-theme="fresh"] .reviews__grid {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            [data-theme="fresh"] .services__grid,
+            [data-theme="fresh"] .reviews__grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* ============================================
+           THEME: BOLD (High contrast, industrial)
+           ============================================ */
+        [data-theme="bold"] {
+            --color-primary: #FF6600;
+            --color-primary-dark: #E55A00;
+            --color-primary-light: #FF8533;
+            --color-secondary: #18181b;
+            --color-secondary-light: #27272a;
+            --color-accent: #FF6600;
+
+            --color-dark: #09090b;
+            --color-gray-900: #18181b;
+            --color-gray-800: #27272a;
+            --color-gray-700: #3f3f46;
+            --color-gray-600: #71717a;
+            --color-gray-400: #a1a1aa;
+            --color-gray-300: #d4d4d8;
+            --color-gray-200: #e4e4e7;
+            --color-gray-100: #f4f4f5;
+            --color-white: #ffffff;
+
+            --color-star: #FF6600;
+            --font-heading: 'Sora', sans-serif;
+            --font-body: 'Inter', sans-serif;
+            --border-radius: 0px;
+            --border-radius-sm: 0px;
+            --shadow-glow: 0 0 30px rgba(255,102,0,0.25);
+        }
+
+        [data-theme="bold"] .header {
+            background: #09090b;
+            border-bottom: 3px solid #FF6600;
+        }
+
+        [data-theme="bold"] .logo__text {
+            color: #ffffff;
+        }
+
+        [data-theme="bold"] .logo__text span {
+            color: #a1a1aa;
+        }
+
+        [data-theme="bold"] .logo__icon {
+            background: #FF6600;
+            border-radius: 0;
+        }
+
+        [data-theme="bold"] .nav__link {
+            color: #a1a1aa;
+        }
+
+        [data-theme="bold"] .nav__link:hover {
+            color: #FF6600;
+            background: rgba(255,102,0,0.08);
+        }
+
+        [data-theme="bold"] .nav__cta {
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.85rem;
+        }
+
+        [data-theme="bold"] .top-bar {
+            background: #FF6600;
+            color: white;
+        }
+
+        [data-theme="bold"] .top-bar a {
+            color: white;
+        }
+
+        [data-theme="bold"] .top-bar .dot {
+            background: white;
+        }
+
+        [data-theme="bold"] .hero {
+            background: #09090b;
+            padding: 5rem 0 4rem;
+        }
+
+        [data-theme="bold"] .hero::before {
+            opacity: 0.08;
+        }
+
+        [data-theme="bold"] .hero__badge {
+            background: rgba(255,102,0,0.15);
+            border: 2px solid #FF6600;
+            color: #FF6600;
+            border-radius: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.8rem;
+        }
+
+        [data-theme="bold"] .hero__title .highlight {
+            color: #FF6600;
+        }
+
+        [data-theme="bold"] .btn--outline {
+            border-width: 3px;
+        }
+
+        [data-theme="bold"] .trust-bar {
+            background: #18181b;
+            border: none;
+            border-bottom: 3px solid #FF6600;
+        }
+
+        [data-theme="bold"] .trust-bar__item {
+            color: #d4d4d8;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 0.5px;
+        }
+
+        [data-theme="bold"] .trust-bar__icon {
+            background: rgba(255,102,0,0.15);
+            border-radius: 0;
+        }
+
+        [data-theme="bold"] .section-label {
+            color: #FF6600;
+        }
+
+        [data-theme="bold"] .service-card {
+            border: 2px solid #e4e4e7;
+        }
+
+        [data-theme="bold"] .service-card:hover {
+            border-color: #FF6600;
+            box-shadow: 4px 4px 0 #FF6600;
+            transform: translate(-4px, -4px);
+        }
+
+        [data-theme="bold"] .service-card::before {
+            background: #FF6600;
+            height: 4px;
+        }
+
+        [data-theme="bold"] .service-card__icon {
+            background: rgba(255,102,0,0.1);
+        }
+
+        [data-theme="bold"] .about {
+            background: #f4f4f5;
+        }
+
+        [data-theme="bold"] .about__image-placeholder {
+            border: 3px solid #18181b;
+        }
+
+        [data-theme="bold"] .about__feature-icon {
+            background: rgba(255,102,0,0.1);
+            border-radius: 0;
+        }
+
+        [data-theme="bold"] .about__award {
+            background: #09090b;
+            border-left: 5px solid #FF6600;
+        }
+
+        [data-theme="bold"] .mot {
+            background: #18181b;
+        }
+
+        [data-theme="bold"] .mot .section-label {
+            color: #FF6600;
+        }
+
+        [data-theme="bold"] .mot__class {
+            border: 2px solid rgba(255,102,0,0.3);
+        }
+
+        [data-theme="bold"] .mot__booking {
+            border: 3px solid #FF6600;
+        }
+
+        [data-theme="bold"] .review-card {
+            border: 2px solid #e4e4e7;
+        }
+
+        [data-theme="bold"] .brands {
+            background: #09090b;
+            border: none;
+        }
+
+        [data-theme="bold"] .brands__title {
+            color: #a1a1aa;
+        }
+
+        [data-theme="bold"] .brand-logo {
+            background: transparent;
+            border: 2px solid #3f3f46;
+            color: #a1a1aa;
+        }
+
+        [data-theme="bold"] .brand-logo:hover {
+            border-color: #FF6600;
+            color: #FF6600;
+            box-shadow: 3px 3px 0 #FF6600;
+            transform: translate(-2px, -2px);
+        }
+
+        [data-theme="bold"] .contact__form {
+            background: #f4f4f5;
+            border: 2px solid #e4e4e7;
+        }
+
+        [data-theme="bold"] .footer {
+            border-top: 4px solid #FF6600;
+        }
+
+        /* Bold: Full-width hero, text centered */
+        [data-theme="bold"] .hero .container {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        /* Bold: 2-column services, brutalist feel */
+        [data-theme="bold"] .services__grid {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.25rem;
+        }
+
+        /* Bold: stacked reviews */
+        [data-theme="bold"] .reviews__grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        /* Bold: contact full-width stacked */
+        [data-theme="bold"] .footer__grid {
+            grid-template-columns: 2fr 1fr 1fr;
+        }
+
+        [data-theme="bold"] .nav__list {
+            background: #09090b;
+        }
+
+        [data-theme="bold"] .theme-switcher__toggle {
+            border-color: #FF6600;
+        }
+
+        @media (max-width: 768px) {
+            [data-theme="bold"] .services__grid,
+            [data-theme="bold"] .reviews__grid {
+                grid-template-columns: 1fr;
+            }
+            [data-theme="bold"] .footer__grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <!-- ========== THEME SWITCHER ========== -->
+    <div class="theme-switcher" id="themeSwitcher">
+        <button class="theme-switcher__toggle" id="themeToggle" aria-label="Change theme" title="Switch theme">
+            🎨
+        </button>
+        <div class="theme-switcher__panel" id="themePanel">
+            <div class="theme-switcher__header">
+                <h4>Theme Preview</h4>
+                <button class="theme-switcher__reset" id="themeReset">Reset</button>
+            </div>
+            <ul class="theme-switcher__list">
+                <li class="theme-switcher__option active" data-theme="default">
+                    <div class="theme-switcher__swatch theme-switcher__swatch--default">KC</div>
+                    <div class="theme-switcher__info">
+                        <div class="theme-switcher__name">KC Original</div>
+                        <div class="theme-switcher__desc">Racing red, current design</div>
+                    </div>
+                    <div class="theme-switcher__check">✓</div>
+                </li>
+                <li class="theme-switcher__option" data-theme="midnight">
+                    <div class="theme-switcher__swatch theme-switcher__swatch--midnight">KC</div>
+                    <div class="theme-switcher__info">
+                        <div class="theme-switcher__name">Midnight Steel</div>
+                        <div class="theme-switcher__desc">Dark mode, modern tech feel</div>
+                    </div>
+                    <div class="theme-switcher__check">✓</div>
+                </li>
+                <li class="theme-switcher__option" data-theme="heritage">
+                    <div class="theme-switcher__swatch theme-switcher__swatch--heritage">KC</div>
+                    <div class="theme-switcher__info">
+                        <div class="theme-switcher__name">Heritage Classic</div>
+                        <div class="theme-switcher__desc">Warm leather, classic workshop</div>
+                    </div>
+                    <div class="theme-switcher__check">✓</div>
+                </li>
+                <li class="theme-switcher__option" data-theme="fresh">
+                    <div class="theme-switcher__swatch theme-switcher__swatch--fresh">KC</div>
+                    <div class="theme-switcher__info">
+                        <div class="theme-switcher__name">Fresh Modern</div>
+                        <div class="theme-switcher__desc">Light, clean, minimal SaaS-style</div>
+                    </div>
+                    <div class="theme-switcher__check">✓</div>
+                </li>
+                <li class="theme-switcher__option" data-theme="bold">
+                    <div class="theme-switcher__swatch theme-switcher__swatch--bold">KC</div>
+                    <div class="theme-switcher__info">
+                        <div class="theme-switcher__name">Bold Industrial</div>
+                        <div class="theme-switcher__desc">High contrast, brutalist edge</div>
+                    </div>
+                    <div class="theme-switcher__check">✓</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- ========== TOP BAR ========== -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar__hours">
+                <span class="dot"></span>
+                Open today: Tues–Fri 9am–6pm &nbsp;|&nbsp; Sat 9am–4pm
+            </div>
+            <div class="top-bar__contact">
+                <a href="mailto:info@kcmotorcycles.com">info@kcmotorcycles.com</a>
+                <a href="tel:01273411911"><strong>01273 411 911</strong></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== HEADER ========== -->
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">
+                <div class="logo__icon">KC</div>
+                <div class="logo__text">
+                    KC Motorcycles
+                    <span>Brighton &amp; Portslade</span>
+                </div>
+            </a>
+            <nav>
+                <button class="nav__toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav__list').classList.toggle('active')">
+                    <span></span><span></span><span></span>
+                </button>
+                <ul class="nav__list">
+                    <li><a href="#services" class="nav__link">Services</a></li>
+                    <li><a href="#mot" class="nav__link">MOT Testing</a></li>
+                    <li><a href="#about" class="nav__link">About</a></li>
+                    <li><a href="#reviews" class="nav__link">Reviews</a></li>
+                    <li><a href="#contact" class="nav__link">Contact</a></li>
+                    <li><a href="#contact" class="nav__link nav__cta">Book Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero__content">
+                <a href="https://www.google.com/maps/search/K+C+Motor+Cycles+Freemans+Road+Portslade+Brighton/" target="_blank" rel="noopener noreferrer" class="hero__badge" style="cursor: pointer;">
+                    ⭐ 4.8 Stars, 215+ Google Reviews
+                </a>
+                <h1 class="hero__title">
+                    Brighton's Trusted<br>
+                    <span class="highlight">Motorcycle</span> Experts
+                </h1>
+                <p class="hero__description">
+                    Quality servicing, repairs and MOT testing for all makes and models.
+                    Kevin Carter, Honda Mechanic of the Year runner-up, and the team have
+                    been keeping Sussex riders on the road for over 20 years.
+                </p>
+                <div class="hero__actions">
+                    <a href="#contact" class="btn btn--primary">
+                        Book a Service →
+                    </a>
+                    <a href="tel:01273411911" class="btn btn--outline">
+                        📞 01273 411 911
+                    </a>
+                </div>
+                <div class="hero__stats">
+                    <a href="https://www.google.com/maps/search/K+C+Motor+Cycles+Freemans+Road+Portslade+Brighton/" target="_blank" rel="noopener noreferrer" class="hero__stat" style="cursor: pointer;">
+                        <div class="hero__stat-number">215+</div>
+                        <div class="hero__stat-label">Google Reviews</div>
+                    </a>
+                    <a href="https://www.google.com/maps/search/K+C+Motor+Cycles+Freemans+Road+Portslade+Brighton/" target="_blank" rel="noopener noreferrer" class="hero__stat" style="cursor: pointer;">
+                        <div class="hero__stat-number">4.8★</div>
+                        <div class="hero__stat-label">Average Rating</div>
+                    </a>
+                    <div class="hero__stat">
+                        <div class="hero__stat-number">20+</div>
+                        <div class="hero__stat-label">Years Serving Sussex</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__image">
+                <div class="hero__image-placeholder" role="img" aria-label="Red Honda motorcycle on workshop lift at KC Motorcycles"></div>
+                <a href="https://www.google.com/maps/search/K+C+Motor+Cycles+Freemans+Road+Portslade+Brighton/" target="_blank" rel="noopener noreferrer" class="hero__google-rating" style="cursor: pointer;">
+                    <div>
+                        <div class="stars">★★★★★</div>
+                        <div class="rating-count">Google Reviews</div>
+                    </div>
+                    <div class="rating-text">4.8</div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== TRUST BAR ========== -->
+    <section class="trust-bar">
+        <div class="container">
+            <div class="trust-bar__item">
+                <div class="trust-bar__icon">🔧</div>
+                All Makes &amp; Models
+            </div>
+            <div class="trust-bar__item">
+                <div class="trust-bar__icon">📋</div>
+                MOT Testing Station
+            </div>
+            <div class="trust-bar__item">
+                <div class="trust-bar__icon">🏆</div>
+                Award-Winning Mechanic
+            </div>
+            <div class="trust-bar__item">
+                <div class="trust-bar__icon">💰</div>
+                Fair &amp; Transparent Pricing
+            </div>
+            <a href="https://www.google.com/maps/search/K+C+Motor+Cycles+Freemans+Road+Portslade+Brighton/" target="_blank" rel="noopener noreferrer" class="trust-bar__item" style="cursor: pointer;">
+                <div class="trust-bar__icon">⭐</div>
+                4.8★ Google Rating
+            </a>
+        </div>
+    </section>
+
+    <!-- ========== SERVICES ========== -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="services__header fade-in">
+                <div class="section-label">What We Do</div>
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-subtitle">
+                    From routine maintenance to complex repairs, we keep Brighton's riders on the road.
+                </p>
+            </div>
+            <div class="services__grid">
+                <div class="service-card fade-in">
+                    <div class="service-card__icon">🔧</div>
+                    <h3 class="service-card__title">Servicing</h3>
+                    <p class="service-card__desc">
+                        Full and interim servicing for all motorcycle makes and models.
+                        We follow manufacturer guidelines to maintain your warranty.
+                    </p>
+                    <a href="#contact" class="service-card__link">Book a service →</a>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-card__icon">🛠️</div>
+                    <h3 class="service-card__title">Repairs</h3>
+                    <p class="service-card__desc">
+                        Diagnostics and repairs from minor fixes to major overhauls.
+                        Honest assessments and competitive pricing on all work.
+                    </p>
+                    <a href="#contact" class="service-card__link">Get a quote →</a>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-card__icon">📋</div>
+                    <h3 class="service-card__title">MOT Testing</h3>
+                    <p class="service-card__desc">
+                        DVSA-approved MOT testing for Class 1 &amp; 2 motorcycles.
+                        Quick turnaround with free re-tests if needed.
+                    </p>
+                    <a href="#mot" class="service-card__link">Book an MOT →</a>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-card__icon">🏍️</div>
+                    <h3 class="service-card__title">Tyres &amp; Fitting</h3>
+                    <p class="service-card__desc">
+                        Wide range of tyres from top brands including Maxxis and CST.
+                        Expert fitting and balancing while you wait.
+                    </p>
+                    <a href="#contact" class="service-card__link">Check availability →</a>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-card__icon">⚡</div>
+                    <h3 class="service-card__title">Electrical &amp; Diagnostics</h3>
+                    <p class="service-card__desc">
+                        Modern diagnostic equipment for fault-finding. Battery testing,
+                        charging system checks, and electrical repairs.
+                    </p>
+                    <a href="#contact" class="service-card__link">Diagnose issue →</a>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-card__icon">🛒</div>
+                    <h3 class="service-card__title">Parts &amp; Accessories</h3>
+                    <p class="service-card__desc">
+                        Quality parts from trusted brands. We prefer to give you personal
+                        advice rather than run an online shop. Call in or give us a ring,
+                        and if we haven't got it, we can usually have it here the same day.
+                    </p>
+                    <a href="tel:01273411911" class="service-card__link">Call for parts →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== ABOUT / WHY KC ========== -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about__image-placeholder fade-in" role="img" aria-label="Kevin Carter working on a Kawasaki motorcycle in the KC Motorcycles workshop"></div>
+            <div class="about__content fade-in">
+                <div class="section-label">About Us</div>
+                <h2 class="section-title">Quality Work, Fair Price. Nothing More.</h2>
+                <p class="about__text">
+                    Entrust your bike with us and you'll receive quality servicing from our
+                    experienced team. Kevin Carter has been runner-up in Honda's Mechanic of
+                    the Year, and we've served riders for over 20 years from all over Sussex
+                    and beyond.
+                </p>
+                <p class="about__text">
+                    We use only quality parts from our trusted suppliers, and if you need
+                    something specific we can often source it within a day. Our focus is
+                    quality work done, at a fair price. That means you don't pay for our
+                    marketing, fancy headed paper or parts that you don't need.
+                </p>
+                <p class="about__text" style="font-weight: 500; color: var(--color-gray-800);">
+                    All our business is word of mouth, and doing a good job is the only
+                    marketing we do.
+                </p>
+                <div class="about__features">
+                    <div class="about__feature">
+                        <div class="about__feature-icon">✓</div>
+                        <span class="about__feature-text">All makes &amp; models welcome</span>
+                    </div>
+                    <div class="about__feature">
+                        <div class="about__feature-icon">✓</div>
+                        <span class="about__feature-text">DVSA-approved MOT station</span>
+                    </div>
+                    <div class="about__feature">
+                        <div class="about__feature-icon">✓</div>
+                        <span class="about__feature-text">No hidden charges, ever</span>
+                    </div>
+                    <div class="about__feature">
+                        <div class="about__feature-icon">✓</div>
+                        <span class="about__feature-text">Only quality parts fitted</span>
+                    </div>
+                    <div class="about__feature">
+                        <div class="about__feature-icon">✓</div>
+                        <span class="about__feature-text">20+ years serving Sussex riders</span>
+                    </div>
+                    <div class="about__feature">
+                        <div class="about__feature-icon">✓</div>
+                        <span class="about__feature-text">100% word-of-mouth reputation</span>
+                    </div>
+                </div>
+                <div class="about__award">
+                    <div class="about__award-icon">🏆</div>
+                    <div class="about__award-text">
+                        <strong>Honda Mechanic of the Year Runner-Up</strong>
+                        <span>Kevin Carter - Recognised excellence in motorcycle engineering</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== MOT SECTION ========== -->
+    <section class="mot" id="mot">
+        <div class="container">
+            <div class="mot__content fade-in">
+                <div class="section-label">MOT Testing</div>
+                <h2 class="section-title">Motorcycle MOT Testing Station</h2>
+                <p class="mot__description">
+                    As a DVSA-approved testing facility, we provide thorough and fair MOT tests
+                    for motorcycles and scooters. Our experienced testers ensure your bike meets
+                    all safety standards, and we'll always talk you through the results.
+                </p>
+                <div class="mot__classes">
+                    <div class="mot__class">
+                        <div class="mot__class-title">Class 1 MOT</div>
+                        <div class="mot__class-desc">Motorcycles up to 200cc</div>
+                    </div>
+                    <div class="mot__class">
+                        <div class="mot__class-title">Class 2 MOT</div>
+                        <div class="mot__class-desc">Motorcycles with sidecar &amp; over 200cc</div>
+                    </div>
+                </div>
+                <a href="#contact" class="btn btn--primary">Book Your MOT →</a>
+            </div>
+            <div class="mot__booking fade-in">
+                <h3>Motorcycle MOT</h3>
+                <div class="mot__booking-price">£29.65</div>
+                <div class="mot__booking-note">Government set price - same everywhere</div>
+                <ul class="mot__booking-features">
+                    <li>DVSA-approved testing station</li>
+                    <li>Class 1 &amp; Class 2 testing</li>
+                    <li>Free re-test within 10 working days</li>
+                    <li>Results explained clearly</li>
+                    <li>Advisory notes provided</li>
+                    <li>Quick turnaround, often same day</li>
+                </ul>
+                <a href="tel:01273411911" class="btn btn--primary">
+                    📞 Call to Book
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== REVIEWS ========== -->
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <div class="reviews__header fade-in">
+                <div class="section-label">Testimonials</div>
+                <h2 class="section-title">What Our Customers Say</h2>
+                <p class="section-subtitle">
+                    Don't just take our word for it, hear from Brighton's riding community.
+                </p>
+                <a href="https://www.google.com/maps/search/K+C+Motor+Cycles+Freemans+Road+Portslade+Brighton/" target="_blank" rel="noopener noreferrer" class="reviews__rating-summary" style="cursor: pointer;">
+                    <div class="reviews__rating-number">4.8</div>
+                    <div>
+                        <div class="reviews__rating-stars">★★★★★</div>
+                        <div class="reviews__rating-count">Based on 215+ Google Reviews ↗</div>
+                    </div>
+                </a>
+            </div>
+            <div class="reviews__grid">
+                <div class="review-card fade-in">
+                    <div class="review-card__stars">★★★★★</div>
+                    <p class="review-card__text">
+                        "Having been new to the area, I have been so relieved to have been recommended KC's. I've now taken all my bikes there over the years. Unlike my previous main dealer, if it didn't need doing, I know I won't be charged for it."
+                    </p>
+                    <div class="review-card__author">
+                        <div class="review-card__avatar">R</div>
+                        <div>
+                            <div class="review-card__name">Rob</div>
+                            <div class="review-card__source">Brighton</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card fade-in">
+                    <div class="review-card__stars">★★★★★</div>
+                    <p class="review-card__text">
+                        "I don't think that I'd ride my bike even half as much if it wasn't for these guys keeping me on the road."
+                    </p>
+                    <div class="review-card__author">
+                        <div class="review-card__avatar">T</div>
+                        <div>
+                            <div class="review-card__name">Tony</div>
+                            <div class="review-card__source">Horsham</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card fade-in">
+                    <div class="review-card__stars">★★★★★</div>
+                    <p class="review-card__text">
+                        "When I get my bike back, I know it's sorted. Thanks guys."
+                    </p>
+                    <div class="review-card__author">
+                        <div class="review-card__avatar">J</div>
+                        <div>
+                            <div class="review-card__name">James</div>
+                            <div class="review-card__source">Brighton</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card fade-in">
+                    <div class="review-card__stars">★★★★★</div>
+                    <p class="review-card__text">
+                        "It's worth coming down just for the really bad humour! Only joking, but not about the humour... that really is bad, but I really appreciate how often you folks have sorted annoying stuff on my bike and in time for me to follow through on plans I had. Thanks for that."
+                    </p>
+                    <div class="review-card__author">
+                        <div class="review-card__avatar">M</div>
+                        <div>
+                            <div class="review-card__name">Maggie</div>
+                            <div class="review-card__source">Worthing</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== BRANDS ========== -->
+    <section class="brands" id="brands">
+        <div class="container">
+            <div class="brands__title">Trusted Brands We Stock &amp; Fit</div>
+            <div class="brands__grid">
+                <div class="brand-logo">Alpinestars</div>
+                <div class="brand-logo">NGK</div>
+                <div class="brand-logo">Yuasa</div>
+                <div class="brand-logo">RK Chains</div>
+                <div class="brand-logo">Maxxis</div>
+                <div class="brand-logo">Ferodo</div>
+                <div class="brand-logo">Supersprox</div>
+                <div class="brand-logo">Motorex</div>
+                <div class="brand-logo">Champion</div>
+                <div class="brand-logo">NOCO</div>
+                <div class="brand-logo">CST</div>
+                <div class="brand-logo">Fulbat</div>
+            </div>
+            <div class="fade-in" style="max-width: 700px; margin: 2.5rem auto 0; text-align: center; padding: 1.75rem 2rem; background: var(--color-white); border-radius: var(--border-radius); border: 1px solid var(--color-gray-200);">
+                <p style="font-size: 0.95rem; color: var(--color-gray-700); line-height: 1.7; margin-bottom: 1rem;">
+                    <strong style="color: var(--color-dark);">Need parts or servicing consumables?</strong><br>
+                    We believe you're best served by personal contact and direct advice rather
+                    than an online shop. Pop in or give us a call. If we haven't got it there
+                    and then, we can usually have it here within the working day.
+                </p>
+                <a href="tel:01273411911" style="color: var(--color-primary); font-weight: 600; font-size: 1.1rem;">📞 01273 411 911</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTACT & BOOKING ========== -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact__info fade-in">
+                <div class="section-label">Get in Touch</div>
+                <h2 class="section-title">Contact &amp; Location</h2>
+
+                <div class="contact__detail">
+                    <div class="contact__detail-icon">📍</div>
+                    <div class="contact__detail-text">
+                        <strong>Address</strong>
+                        <span>Unit 3 Freemans Road, Portslade, Brighton BN41 1SL</span>
+                    </div>
+                </div>
+                <div class="contact__detail">
+                    <div class="contact__detail-icon">📞</div>
+                    <div class="contact__detail-text">
+                        <strong>Phone</strong>
+                        <span><a href="tel:01273411911">01273 411 911</a></span>
+                    </div>
+                </div>
+                <div class="contact__detail">
+                    <div class="contact__detail-icon">✉️</div>
+                    <div class="contact__detail-text">
+                        <strong>Email</strong>
+                        <span><a href="mailto:info@kcmotorcycles.com">info@kcmotorcycles.com</a></span>
+                    </div>
+                </div>
+
+                <h3>Opening Hours</h3>
+                <table class="contact__hours-table">
+                    <tr>
+                        <td>Monday</td>
+                        <td>Closed</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday – Friday</td>
+                        <td>9:00am – 6:00pm</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday</td>
+                        <td>9:00am – 4:00pm</td>
+                    </tr>
+                    <tr>
+                        <td>Sunday</td>
+                        <td>Closed</td>
+                    </tr>
+                </table>
+
+                <h3>Getting Here</h3>
+                <p style="color: var(--color-gray-600); font-size: 0.95rem; line-height: 1.7;">
+                    We're located in Portslade, just off the A270. Easy access from Brighton city centre,
+                    Hove, and Shoreham. Free parking available on site.
+                </p>
+            </div>
+
+            <div class="contact__form fade-in">
+                <h3>Book a Service or MOT</h3>
+                <p>Fill in the form below and we'll get back to you within 24 hours.</p>
+                <form action="#" method="POST">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Your Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="John Smith">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="07xxx xxxxxx">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="john@example.com">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="service">Service Required *</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select a service...</option>
+                                <option value="mot">MOT Testing</option>
+                                <option value="service">Full Service</option>
+                                <option value="interim">Interim Service</option>
+                                <option value="repair">Repair / Diagnostics</option>
+                                <option value="tyres">Tyres &amp; Fitting</option>
+                                <option value="other">Other Enquiry</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="bike">Motorcycle Make &amp; Model</label>
+                            <input type="text" id="bike" name="bike" placeholder="e.g. Honda CB500F">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Additional Details</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Tell us about the work needed, preferred dates, etc."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary" style="width:100%; justify-content:center;">
+                        Send Enquiry →
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== MAP ========== -->
+    <section class="map" id="map">
+        <div style="text-align:center; width:100%;">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2521.0!2d-0.218366!3d50.83841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTDCsDUwJzE4LjMiTiAwwrAxMycwNi4xIlc!5e0!3m2!1sen!2suk!4v1"
+                width="100%"
+                height="400"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="KC Motorcycles location map">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <div class="logo__icon">KC</div>
+                    <p>
+                        Brighton's trusted independent motorcycle workshop. Expert servicing,
+                        repairs, and MOT testing for all makes and models since 2000.
+                    </p>
+                    <div class="footer__social">
+                        <a href="#" aria-label="Facebook">FB</a>
+                        <a href="#" aria-label="Instagram">IG</a>
+                        <a href="#" aria-label="Google Business">G</a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Services</h4>
+                    <ul class="footer__links">
+                        <li><a href="#services">Servicing</a></li>
+                        <li><a href="#services">Repairs</a></li>
+                        <li><a href="#mot">MOT Testing</a></li>
+                        <li><a href="#services">Tyres &amp; Fitting</a></li>
+                        <li><a href="#services">Diagnostics</a></li>
+                        <li><a href="#brands">Parts &amp; Accessories</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul class="footer__links">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#reviews">Reviews</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#contact">Book Online</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contact</h4>
+                    <ul class="footer__links">
+                        <li>Unit 3 Freemans Road</li>
+                        <li>Portslade, Brighton</li>
+                        <li>BN41 1SL</li>
+                        <li style="margin-top: 0.75rem;"><a href="tel:01273411911">01273 411 911</a></li>
+                        <li><a href="mailto:info@kcmotorcycles.com">info@kcmotorcycles.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2026 KC Motorcycles. All rights reserved.</p>
+                <p>Unit 3 Freemans Road, Portslade, Brighton BN41 1SL</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========== SCRIPTS ========== -->
+    <script>
+        // ---- Theme Switcher ----
+        const ThemeSwitcher = {
+            STORAGE_KEY: 'kc-theme',
+            currentTheme: 'default',
+
+            init() {
+                this.panel = document.getElementById('themePanel');
+                this.toggle = document.getElementById('themeToggle');
+                this.switcher = document.getElementById('themeSwitcher');
+                this.options = document.querySelectorAll('.theme-switcher__option');
+                this.resetBtn = document.getElementById('themeReset');
+
+                // Load saved theme
+                const saved = localStorage.getItem(this.STORAGE_KEY);
+                if (saved && saved !== 'default') {
+                    this.setTheme(saved, false);
+                }
+
+                // Toggle panel
+                this.toggle.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    this.panel.classList.toggle('open');
+                });
+
+                // Theme options
+                this.options.forEach(opt => {
+                    opt.addEventListener('click', () => {
+                        const theme = opt.getAttribute('data-theme');
+                        this.setTheme(theme, true);
+                    });
+                });
+
+                // Reset button
+                this.resetBtn.addEventListener('click', () => {
+                    this.setTheme('default', true);
+                });
+
+                // Close on outside click
+                document.addEventListener('click', (e) => {
+                    if (!this.switcher.contains(e.target)) {
+                        this.panel.classList.remove('open');
+                    }
+                });
+
+                // Close on Escape
+                document.addEventListener('keydown', (e) => {
+                    if (e.key === 'Escape') {
+                        this.panel.classList.remove('open');
+                    }
+                });
+            },
+
+            setTheme(themeName, save) {
+                this.currentTheme = themeName;
+                document.documentElement.setAttribute('data-theme', themeName);
+
+                // Update active state
+                this.options.forEach(opt => {
+                    opt.classList.toggle('active', opt.getAttribute('data-theme') === themeName);
+                });
+
+                // Show dot indicator when not default
+                this.switcher.classList.toggle('has-theme', themeName !== 'default');
+
+                if (save) {
+                    localStorage.setItem(this.STORAGE_KEY, themeName);
+                }
+
+                // Smooth transition for theme changes
+                document.body.style.transition = 'background-color 0.4s ease, color 0.3s ease';
+                setTimeout(() => {
+                    document.body.style.transition = '';
+                }, 500);
+            }
+        };
+
+        // ---- Scroll animations ----
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+        // ---- Smooth scroll for anchor links ----
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    document.querySelector('.nav__list').classList.remove('active');
+                }
+            });
+        });
+
+        // ---- Highlight current day in opening hours ----
+        const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+        const today = days[new Date().getDay()];
+        document.querySelectorAll('.contact__hours-table tr').forEach(row => {
+            if (row.textContent.includes(today) ||
+                (today !== 'Saturday' && today !== 'Sunday' && row.textContent.includes('Monday'))) {
+                row.classList.add('today');
+            }
+        });
+
+        // ---- Initialise theme switcher ----
+        document.addEventListener('DOMContentLoaded', () => {
+            ThemeSwitcher.init();
+        });
+    </script>
+
+</body>
+</html>
